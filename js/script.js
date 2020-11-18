@@ -38,6 +38,8 @@ zipForm.on("submit", async function(e)
         $("#error").html("Unknown zip code");
         $("#error").css("color", "red");
     }
+    $("form#search")[0].reset();
+    $("input#zip").css("font-weight", "normal")
 });
 
 // Enables search button and changes search field colors if 5 digit zip (also during input)
